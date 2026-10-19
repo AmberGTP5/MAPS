@@ -1,0 +1,1279 @@
+[
+  {
+    "category": "generic",
+    "prompt": "Bring me a coffee then take it to my desk.",
+    "id": "rand_001"
+  },
+  {
+    "category": "generic",
+    "prompt": "Bring me a coffee then take it to my desk. Afterward, return both robots to base.",
+    "id": "rand_002"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and bring it to my desk.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_003"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and deliver it to my desk.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_004"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and do the handoff at Info Hub 4F before delivery.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_005"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Please get me a coffee and do the handoff at the 4F elevator lobby before delivery.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_006"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and hand it over at the Info Hub on 4F before bringing it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_007"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and use the 4F elevator lobby as the handoff point before the desk delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_008"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and use the 4F elevator lobby as the handoff point before the desk delivery. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_009"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and do the handoff at Info Hub 4F before delivery.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_010"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and meet at the 4F elevator lobby for handoff before bringing it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_011"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Buy me a coffee and use the 4F elevator lobby as the handoff point before the desk delivery.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_012"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and use the 4F elevator lobby as the handoff point before the desk delivery.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_013"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Buy me a Starbucks coffee and deliver it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_014"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and use the 4F elevator lobby as the handoff point before the desk delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_015"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and deliver it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_016"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and do the handoff at the 4F elevator lobby before delivery. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_017"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and do the handoff at Info Hub 4F before delivery. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_018"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and do the handoff at the 4F elevator lobby before delivery. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_019"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Please get me a coffee and use the 4F elevator lobby as the handoff point before the desk delivery. Finally, have both robots go back to base.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_020"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and meet at the 4F elevator lobby for handoff before bringing it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_021"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and deliver it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_022"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Please get me a coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk. Afterward, return both robots to base.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_023"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Please get me a coffee and use Info Hub 4F as the handoff point before the desk delivery. Then make sure both robots return to their stations.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_024"
+  },
+  {
+    "category": "generic",
+    "prompt": "Bring me a coffee and bring it to my desk. Then make sure both robots return to their stations.",
+    "id": "rand_025"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and do the handoff at the 4F elevator lobby before delivery. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_026"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and bring it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_027"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and do the handoff at the 4F elevator lobby before delivery.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_028"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and use the 4F elevator lobby as the handoff point before the desk delivery. Then make sure both robots return to their stations.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_029"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Please get me a coffee and hand it over at the Info Hub on 4F before bringing it to my desk. Afterward, return both robots to base.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_030"
+  },
+  {
+    "category": "generic",
+    "prompt": "Please get me a coffee then take it to my desk. Finally, have both robots go back to base.",
+    "id": "rand_031"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and bring it to my desk.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_032"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and hand it over at the Info Hub on 4F before bringing it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_033"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Buy me a coffee and do the handoff at the 4F elevator lobby before delivery.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_034"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and hand it over at the Info Hub on 4F before bringing it to my desk.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_035"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and do the handoff at the 4F elevator lobby before delivery. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_036"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_037"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and use Info Hub 4F as the handoff point before the desk delivery. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_038"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Buy me a coffee and do the handoff at the 4F elevator lobby before delivery. Then make sure both robots return to their stations.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_039"
+  },
+  {
+    "category": "generic",
+    "prompt": "Buy me a coffee and deliver it to my desk. Afterward, return both robots to base.",
+    "id": "rand_040"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F then take it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_041"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and deliver it to my desk.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_042"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and deliver it to my desk.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_043"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me coffee from Starbucks then take it to my desk.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_044"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and use the 4F elevator lobby as the handoff point before the desk delivery. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_045"
+  },
+  {
+    "category": "generic",
+    "prompt": "Buy me a coffee then take it to my desk. Afterward, return both robots to base.",
+    "id": "rand_046"
+  },
+  {
+    "category": "generic",
+    "prompt": "Please get me a coffee and deliver it to my desk. Then make sure both robots return to their stations.",
+    "id": "rand_047"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and do the handoff at the 4F elevator lobby before delivery.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_048"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and do the handoff at Info Hub 4F before delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_049"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and deliver it to my desk.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_050"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and use Info Hub 4F as the handoff point before the desk delivery.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_051"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and bring it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_052"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and use Info Hub 4F as the handoff point before the desk delivery. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_053"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and do the handoff at Info Hub 4F before delivery. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_054"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and meet at the 4F elevator lobby for handoff before bringing it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_055"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and use Info Hub 4F as the handoff point before the desk delivery. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_056"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and use the 4F elevator lobby as the handoff point before the desk delivery. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_057"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and hand it over at the Info Hub on 4F before bringing it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_058"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Buy me a coffee and hand it over at the Info Hub on 4F before bringing it to my desk.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_059"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and hand it over at the Info Hub on 4F before bringing it to my desk. Finally, have both robots go back to base.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_060"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Please get me a coffee and use Info Hub 4F as the handoff point before the desk delivery. Finally, have both robots go back to base.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_061"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and use the 4F elevator lobby as the handoff point before the desk delivery. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_062"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_063"
+  },
+  {
+    "category": "generic",
+    "prompt": "Buy me a coffee and deliver it to my desk. Then make sure both robots return to their stations.",
+    "id": "rand_064"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and use the 4F elevator lobby as the handoff point before the desk delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_065"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Buy me a coffee and do the handoff at the 4F elevator lobby before delivery. Finally, have both robots go back to base.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_066"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee then take it to my desk.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_067"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Buy me a Starbucks coffee and bring it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_068"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and use Info Hub 4F as the handoff point before the desk delivery. Finally, have both robots go back to base.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_069"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and do the handoff at the 4F elevator lobby before delivery.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_070"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and meet at the 4F elevator lobby for handoff before bringing it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_071"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk. Finally, have both robots go back to base.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_072"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee then take it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_073"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_074"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and hand it over at the Info Hub on 4F before bringing it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_075"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Buy me a Starbucks coffee and bring it to my desk.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_076"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and bring it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_077"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and use Info Hub 4F as the handoff point before the desk delivery.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_078"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and meet at the 4F elevator lobby for handoff before bringing it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_079"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and do the handoff at the 4F elevator lobby before delivery.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_080"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and do the handoff at Info Hub 4F before delivery. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_081"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and deliver it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_082"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and bring it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_083"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and bring it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_084"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and meet at the 4F elevator lobby for handoff before bringing it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_085"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and use the 4F elevator lobby as the handoff point before the desk delivery. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_086"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and hand it over at the Info Hub on 4F before bringing it to my desk.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_087"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and do the handoff at Info Hub 4F before delivery. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_088"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and meet at the 4F elevator lobby for handoff before bringing it to my desk.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_089"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and use the 4F elevator lobby as the handoff point before the desk delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_090"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and meet at the 4F elevator lobby for handoff before bringing it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_091"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and do the handoff at Info Hub 4F before delivery. Afterward, return both robots to base.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_092"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Buy me a coffee and do the handoff at Info Hub 4F before delivery. Then make sure both robots return to their stations.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_093"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and use the 4F elevator lobby as the handoff point before the desk delivery. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_094"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and do the handoff at the 4F elevator lobby before delivery. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_095"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and do the handoff at Info Hub 4F before delivery.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_096"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and meet at the 4F elevator lobby for handoff before bringing it to my desk.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_097"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Please get me a coffee and do the handoff at Info Hub 4F before delivery.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_098"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and bring it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_099"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and do the handoff at the 4F elevator lobby before delivery. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_100"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and do the handoff at the 4F elevator lobby before delivery. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_101"
+  },
+  {
+    "category": "generic",
+    "prompt": "Buy me a coffee and deliver it to my desk.",
+    "id": "rand_102"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and deliver it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_103"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_104"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and do the handoff at the 4F elevator lobby before delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_105"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and use the 4F elevator lobby as the handoff point before the desk delivery.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_106"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and use Info Hub 4F as the handoff point before the desk delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_107"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and use Info Hub 4F as the handoff point before the desk delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_108"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me coffee from Starbucks then take it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_109"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me coffee from Starbucks then take it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_110"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and deliver it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_111"
+  },
+  {
+    "category": "generic",
+    "prompt": "Please get me a coffee and deliver it to my desk.",
+    "id": "rand_112"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and hand it over at the Info Hub on 4F before bringing it to my desk.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_113"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and hand it over at the Info Hub on 4F before bringing it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_114"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and use Info Hub 4F as the handoff point before the desk delivery. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_115"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and deliver it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_116"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Buy me a coffee and hand it over at the Info Hub on 4F before bringing it to my desk. Then make sure both robots return to their stations.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_117"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and do the handoff at the 4F elevator lobby before delivery. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_118"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Buy me a Starbucks coffee then take it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_119"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and use the 4F elevator lobby as the handoff point before the desk delivery. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_120"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and use the 4F elevator lobby as the handoff point before the desk delivery.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_121"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and use the 4F elevator lobby as the handoff point before the desk delivery.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_122"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Buy me a coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk. Finally, have both robots go back to base.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_123"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and use Info Hub 4F as the handoff point before the desk delivery.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_124"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and hand it over at the Info Hub on 4F before bringing it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_125"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and use the 4F elevator lobby as the handoff point before the desk delivery. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_126"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine then take it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_127"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine then take it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_128"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Please get me a coffee and use the 4F elevator lobby as the handoff point before the desk delivery.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_129"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and do the handoff at the 4F elevator lobby before delivery. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_130"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Please get me a coffee and hand it over at the Info Hub on 4F before bringing it to my desk.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_131"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and use Info Hub 4F as the handoff point before the desk delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_132"
+  },
+  {
+    "category": "generic",
+    "prompt": "Please get me a coffee and bring it to my desk. Afterward, return both robots to base.",
+    "id": "rand_133"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and use the 4F elevator lobby as the handoff point before the desk delivery. Finally, have both robots go back to base.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_134"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and bring it to my desk.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_135"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F then take it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_136"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk. Afterward, return both robots to base.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_137"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and bring it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_138"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine then take it to my desk.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_139"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F then take it to my desk.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_140"
+  },
+  {
+    "category": "generic",
+    "prompt": "Bring me a coffee and deliver it to my desk. Then make sure both robots return to their stations.",
+    "id": "rand_141"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me coffee from Starbucks and bring it to my desk.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_142"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and use the 4F elevator lobby as the handoff point before the desk delivery.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_143"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and use Info Hub 4F as the handoff point before the desk delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_144"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Buy me a Starbucks coffee then take it to my desk.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_145"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and use Info Hub 4F as the handoff point before the desk delivery.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_146"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and do the handoff at Info Hub 4F before delivery.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_147"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me coffee from Starbucks then take it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_148"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Please get me a coffee and do the handoff at Info Hub 4F before delivery. Then make sure both robots return to their stations.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_149"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and do the handoff at Info Hub 4F before delivery.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_150"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and do the handoff at the 4F elevator lobby before delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_151"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and use Info Hub 4F as the handoff point before the desk delivery.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_152"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and meet at the 4F elevator lobby for handoff before bringing it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_153"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_154"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk. Then make sure both robots return to their stations.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_155"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and hand it over at the Info Hub on 4F before bringing it to my desk.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_156"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and hand it over at the Info Hub on 4F before bringing it to my desk.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_157"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up a coffee from Starbucks then take it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_158"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and do the handoff at Info Hub 4F before delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_159"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and use the 4F elevator lobby as the handoff point before the desk delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_160"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and do the handoff at the 4F elevator lobby before delivery. Finally, have both robots go back to base.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_161"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Buy me a Starbucks coffee then take it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_162"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Buy me a coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_163"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and bring it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_164"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and do the handoff at the 4F elevator lobby before delivery.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_165"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Buy me a Starbucks coffee and bring it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_166"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and do the handoff at Info Hub 4F before delivery.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_167"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and deliver it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_168"
+  },
+  {
+    "category": "generic",
+    "prompt": "Bring me a coffee and deliver it to my desk. Afterward, return both robots to base.",
+    "id": "rand_169"
+  },
+  {
+    "category": "generic",
+    "prompt": "Buy me a coffee and deliver it to my desk. Finally, have both robots go back to base.",
+    "id": "rand_170"
+  },
+  {
+    "category": "generic",
+    "prompt": "Please get me a coffee and bring it to my desk.",
+    "id": "rand_171"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee then take it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_172"
+  },
+  {
+    "category": "generic",
+    "prompt": "Please get me a coffee and deliver it to my desk. Afterward, return both robots to base.",
+    "id": "rand_173"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and do the handoff at Info Hub 4F before delivery. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_174"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and do the handoff at Info Hub 4F before delivery. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_175"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and use Info Hub 4F as the handoff point before the desk delivery. Afterward, return both robots to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_176"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and deliver it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_177"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and meet at the 4F elevator lobby for handoff before bringing it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_178"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Bring me a coffee and use Info Hub 4F as the handoff point before the desk delivery. Afterward, return both robots to base.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_179"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and hand it over at the Info Hub on 4F before bringing it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_180"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and use the 4F elevator lobby as the handoff point before the desk delivery.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_181"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_182"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me coffee from Starbucks and do the handoff at Info Hub 4F before delivery.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_183"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Please get me a coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_184"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and hand it over at the Info Hub on 4F before bringing it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_185"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Please get me a coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk. Finally, have both robots go back to base.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_186"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me coffee from Starbucks and deliver it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_187"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Buy me a Starbucks coffee and deliver it to my desk. Afterward, return both robots to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_188"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Please get me a coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk. Then make sure both robots return to their stations.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_189"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Buy me a coffee and use Info Hub 4F as the handoff point before the desk delivery. Finally, have both robots go back to base.",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_190"
+  },
+  {
+    "category": "generic",
+    "prompt": "Please get me a coffee then take it to my desk.",
+    "id": "rand_191"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_192"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Get me a coffee from the 2F vending machine and hand it over at the Info Hub on 4F before bringing it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Info_Hub_4F",
+    "id": "rand_193"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Get me coffee from Starbucks and deliver it to my desk. Finally, have both robots go back to base.",
+    "expected_source": "Starbucks_Outdoor",
+    "id": "rand_194"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up a coffee from Starbucks and meet at the 4F elevator lobby for handoff before bringing it to my desk.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_195"
+  },
+  {
+    "category": "source_constraint",
+    "prompt": "Use the vending machine on 2F to get me a coffee then take it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Vending_Machine_2F",
+    "id": "rand_196"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Buy me a Starbucks coffee and meet at the 4F elevator lobby for handoff before bringing it to my desk. Then make sure both robots return to their stations.",
+    "expected_source": "Starbucks_Outdoor",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_197"
+  },
+  {
+    "category": "generic",
+    "prompt": "Bring me a coffee and bring it to my desk. Afterward, return both robots to base.",
+    "id": "rand_198"
+  },
+  {
+    "category": "combined_constraint",
+    "prompt": "Please pick up coffee from the vending machine on 2F and do the handoff at the 4F elevator lobby before delivery.",
+    "expected_source": "Vending_Machine_2F",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_199"
+  },
+  {
+    "category": "handover_constraint",
+    "prompt": "Buy me a coffee and use the 4F elevator lobby as the handoff point before the desk delivery. Then make sure both robots return to their stations.",
+    "expected_handover": "Elevator_Lobby_4F",
+    "id": "rand_200"
+  }
+]

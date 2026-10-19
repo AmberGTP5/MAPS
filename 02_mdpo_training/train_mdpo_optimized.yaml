@@ -1,0 +1,77 @@
+### 优化的mDPO训练配置
+### 目标：最大化margin-DPO的效果
+
+### 模型配置
+model_name_or_path: ./models/Qwen2.5-7B-Instruct
+trust_remote_code: true
+flash_attn: fa2
+
+### 训练方法
+stage: dpo
+do_train: true
+finetuning_type: lora
+pref_loss: sigmoid
+
+### 关键参数：优化的beta值
+# beta=0.4 是经过调优的值，平衡了：
+# 1. 足够大以学习偏好信号
+# 2. 不会太大导致过拟合
+pref_beta: 0.4
+
+### LoRA配置
+lora_rank: 64
+lora_alpha: 128
+lora_dropout: 0.05
+lora_target: all
+
+### 参考模型配置（使用SFT checkpoint作为参考）
+# 如果没有SFT checkpoint，注释掉这两行
+adapter_name_or_path: ./saves/qwen25_7b/lora/pvr_sft_optimized
+ref_model_adapters: ./saves/qwen25_7b/lora/pvr_sft_optimized
+
+### Margin-DPO配置（关键）
+pref_margin_mode: sample          # 使用样本级别的margin
+pref_margin_field: margin         # margin字段名
+pref_margin_scale: 1.0            # margin缩放因子（保持1.0）
+pref_margin_weight: 0.0           # margin权重（0.0表示使用标准mDPO）
+
+### 数据集配置
+dataset_dir: ./data/pvr_mdpo_optimized
+dataset: pvr_mdpo_train_optimized
+eval_dataset: pvr_mdpo_val_optimized
+template: qwen
+cutoff_len: 4096
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### 输出配置
+output_dir: ./saves/qwen25_7b/lora/pvr_mdpo_optimized
+logging_steps: 5
+save_steps: 50
+plot_loss: true
+overwrite_output_dir: true
+
+### 训练超参数
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8    # 有效batch size = 8
+learning_rate: 5.0e-6             # 较小的学习率，避免过拟合
+num_train_epochs: 3.0             # 3个epoch通常足够
+lr_scheduler_type: cosine
+warmup_ratio: 0.1                 # 10%的warmup
+max_grad_norm: 1.0
+bf16: true
+ddp_timeout: 180000000
+
+### 评估配置
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 50
+save_total_limit: 3               # 只保留最好的3个checkpoint
+
+### 优化器配置
+optim: adamw_torch
+weight_decay: 0.01
+
+### 日志配置
+logging_first_step: true
+save_only_model: false

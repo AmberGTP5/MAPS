@@ -1,0 +1,54 @@
+[llm]
+model = "google/gemini-2.5-flash"
+base_url = "https://openrouter.ai/api/v1"
+api_key = "YOUR_OPENROUTER_API_KEY"
+max_tokens = 4096
+temperature = 0.0
+api_type = "openai"
+api_version = ""
+
+[llm.planner]
+temperature = 0.0
+
+[llm.executor]
+temperature = 0.0
+
+[llm.validator]
+temperature = 0.0
+
+[sandbox]
+use_sandbox = false
+image = "python:3.12-slim"
+work_dir = "/workspace"
+memory_limit = "512m"
+cpu_limit = 1.0
+timeout = 300
+network_enabled = false
+
+[browser]
+headless = true
+disable_security = true
+extra_chromium_args = []
+max_content_length = 2000
+
+[search]
+engine = "Google"
+fallback_engines = ["DuckDuckGo", "Bing"]
+retry_delay = 60
+max_retries = 3
+lang = "en"
+country = "us"
+
+[mcp]
+server_reference = "app.mcp.server"
+
+[runflow]
+use_data_analysis_agent = false
+
+[daytona]
+daytona_api_key = "YOUR_DAYTONA_API_KEY"
+daytona_server_url = "https://app.daytona.io/api"
+daytona_target = "us"
+sandbox_image_name = "whitezxj/sandbox:0.1.0"
+sandbox_entrypoint = "/usr/bin/supervisord -n -c /etc/supervisor/conf.d/supervisord.conf"
+VNC_password = "123456"

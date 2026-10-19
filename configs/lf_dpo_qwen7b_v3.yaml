@@ -1,0 +1,43 @@
+### LLaMA-Factory DPO config (single GPU)
+### Update model_name_or_path before running.
+
+model_name_or_path: /root/autodl-tmp/models/Qwen2.5-7B-Instruct
+template: qwen
+trust_remote_code: true
+
+stage: dpo
+do_train: true
+do_eval: true
+finetuning_type: lora
+lora_target: all
+
+dataset_dir: /root/autodl-tmp/robots-planning/data
+dataset: pvr_dpo_train_v3
+eval_dataset: pvr_dpo_val_v3
+cutoff_len: 4096
+overwrite_cache: true
+preprocessing_num_workers: 8
+
+pref_loss: sigmoid
+pref_beta: 0.1
+
+output_dir: /root/autodl-tmp/robots-planning/runs/lf_dpo_qwen7b_v3
+overwrite_output_dir: true
+logging_steps: 10
+save_steps: 200
+eval_strategy: steps
+eval_steps: 100
+plot_loss: true
+
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 5.0e-6
+num_train_epochs: 2.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+max_grad_norm: 1.0
+
+bf16: true
+ddp_timeout: 180000000
+report_to: none
